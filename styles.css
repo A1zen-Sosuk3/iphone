@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'San Francisco Font';
+    src: url(fonts/San\ Francisco\ Font.otf);
+}
+body, html {
+    height: 100%;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'San Francisco Font';
+}
+a {
+    text-decoration: none;
+}
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+
+/*------------------Iphone's styles--------------------*/
+.box {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background: #666;
+    border-radius: 50px;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #000;
+    border-radius: 48px;
+}
+.inner {
+    position: absolute;
+    inset: 3px;
+    border-radius: 48px;
+    border: 8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all .5s;
+}
+.website_picture {
+    position: absolute;
+    width: 100%;
+    margin-top: 45px;
+    border-radius: 0 0 45px 45px;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;  
+}
+.btn {
+    position: absolute;
+    top: 110px;
+    left: -2px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 3px;
+    height: 26px;
+    background: radial-gradient( #ccc, #666, #222 );
+    z-index: 10;
+}
+.btn.btn2 {
+    top: 160px;
+    height: 40px;
+}
+.btn.btn3 {
+    top: 220px;
+    height: 40px;
+}
+.rightSideBtn {
+    position: absolute;
+    top: 170px;
+    right: -2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 3px;
+    height: 70px;
+    background: radial-gradient( #ccc, #666, #222 );
+    z-index: 10;
+}
+.island_popup {
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 25px;
+    background: #000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    z-index: 100;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.island_popup.active {
+    width: 254px;
+    height: 90px;
+    border-radius: 36px;
+}
+.white-bg {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+#id_clock {
+    font-family: 'San Francisco Font';
+    position: absolute;
+    z-index: 3;
+    top: 3.1%;
+    margin-right: 175px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 7%;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;  
+}
+.web_connection-status_icon {
+    position: absolute;
+    top: 3%;
+    margin-right: -130px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+    align-items: flex-end;
+}
+.arrow1, .arrow2, .arrow3, .arrow4 {
+    width: 3px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.arrow1 {
+   height: 4px;
+}
+.arrow2 {
+    height: 6px;
+}
+.arrow3 {
+    height: 8px;
+}
+.arrow4 {
+    height: 10px;
+}
+.wifi-icon {
+    position: absolute;
+    top: 2.4%;
+    margin-right: -168px;
+    width: 16px;
+    height: 16px;
+}
+.battery-icon {
+    position: absolute;
+    top: 2.1%;
+    margin-right: -208px;
+    width: 20px;
+    height: 20px;
+}
+.wifi-icon, .battery-icon {
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;  
+}
+.header_background {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px 40px 0 0;
+}
+.footer_background {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.648);
+    border-radius: 0 0 35px 35px;
+    display: flex;
+    justify-content: center;
+}
+.control_arrow {
+    width: 110px;
+    height: 5px;
+    border-radius: 45px;
+    background-color: rgba(15, 15, 15, 0.948);
+    position: absolute;
+    bottom: 5px;
+}
+.name-of-website {
+    font-family: 'San Francisco Font';
+    position: absolute;
+    margin-top: 10px;
+    font-size: 8px;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;  
+}
+.lock_icon {
+    width: 8px;
+    height: 8px;
+    opacity: 0.7;
+}
+.inside-island_content {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'San Francisco Font';
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    transition-delay: .3s ease-in-out;
+}
+.island_popup.active .inside-island_content {
+    visibility: visible;
+    opacity: 1;
+}
